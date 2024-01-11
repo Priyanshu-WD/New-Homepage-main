@@ -26,18 +26,6 @@ nav {
   position: relative;
 }
 
-.nav-mob {
-  display: none;
-}
-#nav-2 {
-  display: none;
-}
-
-.humburger,
-.humburger1 {
-  display: none;
-}
-
 nav ul {
   display: flex;
   gap: 3rem;
@@ -57,6 +45,32 @@ nav ul li {
 nav ul li:hover {
   color: var(--soft-red);
   font-weight: 400;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: -10px 0 100px var(--medium-gray);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+.side-bar li {
+  font-size: 1.5rem;
+ padding-left: 1rem;
+ margin: 1rem;
+}
+
+#close {
+  margin-left: 11.4rem;
+  margin-top: -.11rem;
 }
 
 .mob-img {
@@ -181,15 +195,16 @@ nav ul li:hover {
   font-size: 2rem;
 }
 
-.rev-text h3 {
+.rev-text h2 {
   font-family: "Inter", sans-serif;
   color: var(--very-dark-blue);
+  font-size: 1.2rem;
   margin-top: 0.2rem;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
 
-.rev-text h3:hover {
+.rev-text h2:hover {
   color: var(--soft-red);
 }
 
@@ -204,29 +219,17 @@ nav ul li:hover {
   line-height: 1.5rem;
 }
 
+.hide{
+  display: none;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   nav {
-    justify-content: space-between;
     padding: 0.8rem 0.8rem;
   }
 
-  .nav-mob {
+  .hide{
     display: block;
-    position: absolute;
-    z-index: 99999;
-    width: 20rem;
-    right: 13px;
-    background-color: var(--off-white);
-    display: none;
-  }
-
-  .nav-mob ul li {
-    display: block;
-    align-items: end;
-    color: var(--very-dark-blue);
-    padding: 2rem;
-    font-size: 1.2rem;
-    align-items: center;
   }
 
   nav ul li:hover {
@@ -234,26 +237,8 @@ nav ul li:hover {
     font-weight: 400;
   }
 
-  .humburger1 {
-    display: block;
-    position: absolute;
-    right: 7px;
-    z-index: 1;
-  }
-
   nav ul li {
     display: none;
-  }
-
-  .nav-mob ul {
-    display: block;
-    gap: 3rem;
-    align-items: center;
-  }
-
-  .humburger {
-    display: block;
-    width: 3rem;
   }
 
   .sec-1 {
@@ -304,7 +289,7 @@ nav ul li:hover {
     grid-template-columns: auto;
     margin-top: 2rem;
   }
-  .rev-text h3:hover {
+  .rev-text h2:hover {
     color: var(--very-dark-blue);
   }
   .rev-img img {
