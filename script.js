@@ -1,6 +1,6 @@
-const navmob = document.querySelector("#navMob");
-const humburger = document.querySelector("#humBurger1");
-const humburger1 = document.querySelector("#humBurger2");
+const navmob = document.querySelector("#humburger");
+const humburger = document.querySelector("#open");
+const humburger1 = document.querySelector("#close");
 
 humburger.addEventListener("click", () => {
   navmob.style.display = "block";
