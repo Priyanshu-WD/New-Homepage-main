@@ -5,35 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New homepage main</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
   </head>
   <body>
     <main>
       <nav>
         <img src="logo.svg" alt="company_logo" />
 
-        <ul>
-          <img class="humburger" id="humBurger1" src="icon-menu.svg" alt="humburger" />
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
+        <ul class="side-bar" id="humburger">
+          <li class="hide" id="close"><svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg></li>
+          <li class="hide">Home</li>
+          <li class="hide">New</li>
+          <li class="hide">Popular</li>
+          <li class="hide">Trending</li>
+          <li class="hide">Categories</li>
         </ul>
-      </nav>
-      <nav class="nav-mob" id="navMob">
+
         <ul>
-          <img
-            class="humburger1"
-            id="humBurger2"
-            src="icon-menu-close.svg"
-            alt="close"
-          />
           <li>Home</li>
           <li>New</li>
           <li>Popular</li>
           <li>Trending</li>
           <li>Categories</li>
+          <li class="hide" id="open">
+            <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#00001A" fill-rule="evenodd">
+                <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+                <path d="M0 0h40v3H0z" />
+              </g>
+            </svg>
+          </li>
         </ul>
       </nav>
 
@@ -83,7 +84,7 @@
           </div>
           <div class="rev-text">
             <h1>01</h1>
-            <h3>Reviving Retro Pcs</h3>
+            <h2>Reviving Retro Pcs</h2>
             <p>What happens when old PCs are given modern upgrades?</p>
           </div>
         </div>
@@ -93,7 +94,7 @@
           </div>
           <div class="rev-text">
             <h1>02</h1>
-            <h3>Top 10 Laptops of 2022</h3>
+            <h2>Top 10 Laptops of 2022</h2>
             <p>Our best picks for various needs and budgets.</p>
           </div>
         </div>
@@ -103,7 +104,7 @@
           </div>
           <div class="rev-text">
             <h1>03</h1>
-            <h3>The Growth of Gaming</h3>
+            <h2>The Growth of Gaming</h2>
             <p>How the pandemic has sparked fresh opportunities.</p>
           </div>
         </div>
